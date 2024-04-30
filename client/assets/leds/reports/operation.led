@@ -1,0 +1,11 @@
+
+operationWindow = DIALOG(
+    VBOX(
+        HBOX[MARGIN=10x10](
+            LIST[NAME=cmbSortElement, DROPDOWN=YES](do_nothing),
+        ),
+        HBOX(
+            MATRIX[NUMCOL_VISIBLE=0, EXPAND=YES, NAME=table, READONLY=YES, NUMLIN_VISIBLE=0, HEIGHT0=8, RESIZEMATRIX=YES, NUMCOL=7, "0:1"="Назва","0:2"="К-сть","0:3"="Ціна","0:4"="Сума","0:5"="Автор","0:6"="Магазин","0:7"="Дата"](do_nothing)
+        )
+    )
+)

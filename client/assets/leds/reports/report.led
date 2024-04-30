@@ -1,0 +1,11 @@
+
+reportWindow = DIALOG(
+    VBOX(
+        HBOX[MARGIN=10x10](
+            LIST[NAME=cmbSortedElement, DROPDOWN=YES](do_nothing),
+        ),
+        HBOX(
+            MATRIX[NUMCOL_VISIBLE=0, EXPAND=YES, NAME=table,  READONLY=YES, NUMLIN_VISIBLE=0, HEIGHT0=8, RESIZEMATRIX=YES, NUMCOL=7, "0:1"="id","0:2"="Дата","0:3"="Тип","0:4"="Сума","0:5"="Автор","0:6"="Магазин","0:7"="Агент"](do_nothing)
+        )
+    )
+)

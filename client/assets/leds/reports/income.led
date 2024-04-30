@@ -1,0 +1,14 @@
+incomeWindow = DIALOG(
+    VBOX(
+        HBOX[MARGIN=10x10, GAP=15](
+            TEXT[NAME=txtYear, DROPDOWN=YES](do_nothing),
+            BUTTON[NAME=btnShow, SIZE=40]("Показати", do_nothing)
+        ),
+        HBOX[MARGIN=20x20](
+            MATRIX[NUMCOL_VISIBLE=0, EXPAND=YES, NAME=table, WIDTH1=65, WIDTH2=65, WIDTH3=65, WIDTH4=65, WIDTH5=65, WIDTH6=65, WIDTH7=65, WIDTH8=65, WIDTH9=65, WIDTH10=65, WIDTH11=65, WIDTH12=65, WIDTH13=65, READONLY=YES, NUMLIN_VISIBLE=0, HEIGHT0=8, RESIZEMATRIX=YES, NUMCOL=13, "0:1"="Назва","0:2"="Січень","0:3"="Лютий","0:4"="Березень","0:5"="Квітень","0:6"="Трвень","0:7"="Червень","0:8"="Липень","0:9"="Серпень","0:10"="Вересень","0:11"="Жовтень","0:12"="Листопад","0:13"="Грудень"](do_nothing)
+        ),
+        HBOX[MARGIN=20x20](
+            MATRIX[NUMCOL_VISIBLE=0, EXPAND=YES, NAME=tableTotal, WIDTH1=65, WIDTH2=65, WIDTH3=65, WIDTH4=65, WIDTH5=65, WIDTH6=65, WIDTH7=65, WIDTH8=65, WIDTH9=65, WIDTH10=65, WIDTH11=65, WIDTH12=65, WIDTH13=65, READONLY=YES, NUMLIN_VISIBLE=0, HEIGHT0=8, RESIZEMATRIX=YES, NUMCOL=13](do_nothing)
+        )
+    )
+)

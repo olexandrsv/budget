@@ -1,0 +1,17 @@
+expendituresWindow = DIALOG(
+    VBOX(
+        HBOX[MARGIN=10x10, GAP=15](
+            TEXT[NAME=txtSearch, DROPDOWN=YES](do_nothing),
+            LIST[NAME=cmbProduct, DROPDOWN=YES](do_nothing),
+            DATEPICK[NAME=startDate, SEPARATOR=-, ZEROPRECED=YES](),
+            DATEPICK[NAME=endDate, SEPARATOR=-, ZEROPRECED=YES](),
+            BUTTON[NAME=btnShow, SIZE=40]("Показати", do_nothing),
+        ),
+        HBOX[MARGIN=20x20](
+            MATRIX[NUMCOL_VISIBLE=0, EXPAND=YES, NAME=table, READONLY=YES, NUMLIN_VISIBLE=0, HEIGHT0=8, RESIZEMATRIX=YES, NUMCOL=5, "0:1"="Дата","0:2"="Номер","0:3"="Кількість","0:4"="Ціна","0:5"="Сума"](do_nothing)
+        ),
+        HBOX[MARGIN=20x80](
+            MATRIX[NUMCOL_VISIBLE=0, EXPAND=YES, NAME=tableTotal, READONLY=YES, NUMLIN_VISIBLE=0, HEIGHT0=8, RESIZEMATRIX=YES, NUMCOL=5](do_nothing)
+        )
+    )
+)
